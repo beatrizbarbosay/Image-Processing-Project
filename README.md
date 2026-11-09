@@ -1,9 +1,9 @@
-# 🎨 Image Processing · Visual Effects & Analysis
+#Image Processing · Visual Effects & Analysis
 
 **Python · NumPy · Computer Vision · Machine Learning**  
 Projects developed for **EA979 at UNICAMP** 🇧🇷.
 
-### ✨ Before & after
+### Before and after
 
 Three examples from the original image collection and the corresponding processed outputs. The images below are real outputs saved during the project, not mockups.
 
@@ -19,7 +19,7 @@ Three examples from the original image collection and the corresponding processe
 |:---:|:---:|
 | <img src="./01-image-effects/photo/245609_foto11.jpg" alt="Original photograph 11" width="360"> | <img src="./01-image-effects/photo_result/245609_foto_11.jpg" alt="Processed photograph 11" width="360"> |
 
-### 🧪 Custom effects
+### Custom effects
 
 Implemented three image-processing transformations using NumPy:
 
@@ -29,7 +29,7 @@ Implemented three image-processing transformations using NumPy:
 
 [Explore the Python implementations](./01-image-effects/src/unicamp_effects/effects/245609.py) · [Browse all original photos](./01-image-effects/photo/) · [Browse processed outputs](./01-image-effects/photo_result/)
 
-### 🔬 Two-part project
+### Two-part project
 
 | Part | Focus |
 |---|---|
