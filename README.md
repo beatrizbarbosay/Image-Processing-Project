@@ -29,46 +29,6 @@ Implemented three image-processing transformations using NumPy:
 
 [Explore the Python implementations](./01-image-effects/src/unicamp_effects/effects/245609.py) · [Browse all original photos](./01-image-effects/photo/) · [Browse processed outputs](./01-image-effects/photo_result/)
 
-### Machine learning — recognizing image effects
-
-The second stage explored whether machine learning could distinguish **42 image-effect classes** across **7,686 images** resized to 128 × 128 pixels.
-
-**CNN (PyTorch)** — A custom classifier with two convolutional layers, max-pooling and fully connected layers, trained with cross-entropy loss and Adam for **6 epochs**. The dataset was randomly split into **6,148 training** and **1,538 test images**.
-
-| Recorded evaluation | Result |
-|---|---:|
-| **Test-set accuracy** | **66.71%** |
-| Correct predictions | **1,026 / 1,538** |
-| Mean training loss, epoch 1 | 2.3568 |
-| Mean training loss, epoch 6 | 0.5766 |
-| Training device | Apple Metal (MPS) |
-
-These are **results recorded in the original notebook**, not a newly trained model.
-
-![CNN mean training loss over six epochs](./assets/cnn-training-loss.svg)
-
-<details>
-<summary><strong>View the saved confusion-matrix visualization</strong></summary>
-
-![Confusion matrix from the coursework notebook](./assets/cnn-confusion-matrix.png)
-
-*The notebook's confusion-matrix visualization code appends predictions to lists already populated by the preceding cell. The displayed matrix is included as an archived illustration, **not** as the basis for the accuracy calculation above. The reported 66.71% comes from the notebook's separate test-evaluation cell.*
-
-</details>
-
-**PCA (unsupervised analysis)** — The same **7,686 images** were projected from 49,152 pixel features into two principal components to investigate similarities among visual effects.
-
-<details>
-<summary><strong>View the saved PCA projection</strong></summary>
-
-![PCA projection recorded in the coursework notebook](./assets/pca-effects-projection.png)
-
-</details>
-
-**Key insight:** Similar visual effects can be difficult to distinguish, including some pixelation and edge-detection variants. PCA provides a view of visual similarities, while the CNN attempts to predict specific effect labels.
-
-[Explore the full original analysis notebook](./02-effects-analysis/Atividade.ipynb)
-
 ---
 
 ### Two-part project
