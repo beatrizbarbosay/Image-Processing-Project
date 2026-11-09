@@ -1,4 +1,4 @@
-#Image Processing · Visual Effects & Analysis
+# Image Processing · Visual Effects and Analysis
 
 **Python · NumPy · Computer Vision · Machine Learning**  
 Projects developed for **EA979 at UNICAMP** 🇧🇷.
